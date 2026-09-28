@@ -116,13 +116,4 @@ graph.add_edge("generate", END)
 
 helpdesk_graph = graph.compile()
 
-print("LangGraph compiled successfully!")
 
-question = "What are the leave rules for faculty?"
-
-result = helpdesk_graph.invoke({
-    "question": question
-})
-
-print("\nFinal Answer:")
-print(result["answer"])
